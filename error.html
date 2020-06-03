@@ -1,0 +1,86 @@
+	<div class="section">
+	
+		<header class="site-header">
+			{if $theme_settings.soc_link_fb}
+			<img class="logo" src="{$wa_theme_url}{$theme_settings.logo}" alt="Logo">
+			{/if}
+		</header>
+
+		<section>
+
+			<div class="text-block">
+				<h1>{if $error_code}{$error_code}. {/if} {if $error_message}{$error_message}{else}[s`Error`]{/if}</h1>
+				<div class="sub-text">
+					<p>[s`The requested resource is not available.`]</p>
+				</div>
+			</div>
+
+		</section>
+
+		<footer>
+
+			<div class="socials-wrap dflex">
+				{if $theme_settings.soc_link_fb}
+				<a class="social-container" href="{$theme_settings.soc_link_fb}" title="Facebook" target="_blank">
+					<i class="fa fa-facebook"></i>
+				</a>
+				{/if}
+				
+				{if $theme_settings.soc_link_vk}
+				<a class="social-container" href="{$theme_settings.soc_link_vk}" title="Vkontakte" target="_blank">
+					<i class="fa fa-vk"></i>
+				</a>
+				{/if}
+				
+				{if $theme_settings.soc_link_inst}
+				<a class="social-container" href="{$theme_settings.soc_link_inst}" title="Instagram" target="_blank">
+					<i class="fa fa-instagram"></i>
+				</a>
+				{/if}
+				
+				{if $theme_settings.soc_link_tw}
+				<a class="social-container" href="{$theme_settings.soc_link_tw}" title="Twitter" target="_blank">
+					<i class="fa fa-twitter"></i>
+				</a>
+				{/if}
+			</div>
+
+
+		</footer>
+
+	</div>
+
+	<div class="modal" data-modal="trigger-1">
+		<article class="content-wrapper">
+
+			<button class="close"></button>
+
+			<header class="modal-header">
+				<h2>[`About us`]</h2>
+			</header>
+
+			<div class="content">
+				<div class="about-us-text w65">
+					<div class="contact-title"><i class="fa fa-briefcase"></i> {$theme_settings.about_us_text_heading}</div>
+					<p>{$theme_settings.about_us_text}</p>
+				</div>
+				<div class="contact-block w30">
+					{if $theme_settings.modal_phone}
+					<div class="contact-title"><i class="fa fa-phone"></i> [`Phone`]</div>
+					<div class="contact-area">{$theme_settings.modal_phone}</div>
+					{/if}
+
+					{if $theme_settings.modal_email}
+					<div class="contact-title"><i class="fa fa-envelope-o"></i> [`E-mail`]</div>
+					<div class="contact-area"><a href="mailto:{$theme_settings.modal_email}">{$theme_settings.modal_email}</a></div>
+					{/if}
+
+					{if $theme_settings.modal_address}
+					<div class="contact-title"><i class="fa fa-map-marker"></i> [`Address`]</div>
+					<div class="contact-area">{$theme_settings.modal_address}</div>
+					{/if}
+				</div>
+			</div>
+
+		</article>
+	</div>

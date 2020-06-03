@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE theme PUBLIC "wa-app-theme" "http://www.webasyst.com/wa-content/xml/wa-app-theme.dtd">
+<theme id="coming_soon" system="0" vendor="1059767" author="Treustrasse" app="site" version="1.0.0">
+	<name locale="ru_RU">Coming Soon</name>
+	<name locale="en_US">Coming Soon</name>
+	<description locale="ru_RU">Адаптивная тема дизайна «Coming Soon».</description>
+	<description locale="en_US">Adaptive design theme «Coming Soon».</description>
+	<support locale="ru_RU">webasyst@treustrasse.ru</support>
+	<support locale="en_US">webasyst@treustrasse.ru</support>
+	<files>
+		<file path="index.html" custom="0" modified="0">
+			<description locale="en_US">Core layout</description>
+			<description locale="ru_RU">Основной макет</description>
+		</file>
+		<file path="error.html" custom="0" modified="0">
+			<description locale="en_US">404 and other errors</description>
+			<description locale="ru_RU">404 и другие ошибки</description>
+		</file>
+		<file path="page.html" custom="0" modified="0">
+			<description locale="en_US">Static page</description>
+			<description locale="ru_RU">Страница</description>
+		</file>
+		<file path="style.css" custom="0" modified="0">
+			<description locale="en_US">Main styles file</description>
+			<description locale="ru_RU">Основной файл стилей</description>
+		</file>
+		<file path="scripts.js" custom="0" modified="0">
+			<description locale="en_US">Scripts</description>
+			<description locale="ru_RU">Скрипты</description>
+		</file>
+	</files>
+  <about locale="en_US">
+<![CDATA[<p><b>"Coming Soon"</b> is an innovative and at the same time easy-to-use theme that provides a cover to your site while you are working on it. The theme is as simple as possible, but has base settings that will help the user change it for themselves.</p>
+]]></about>
+  <about locale="ru_RU">
+<![CDATA[<p><b>«Coming Soon»</b> - это инновационная и одновременно простая в использовании тема, которая обеспечивает заглушку вашему сайту, в тот момент, пока у Вас ведутся работы над ним. Тема максимально проста, но имеет ряд настроек, которые помогут пользователю изменить её под себя.</p>
+  ]]></about>
+  <settings>
+ 
+	<setting var="main_setting" control_type="group_divider">
+		<value></value>
+		<name locale="en_US">Main settings</name>
+		<name locale="ru_RU">Основные настройки</name>
+	</setting>
+  
+    <setting var="logo" control_type="image">
+      <value>img/logo.png</value>
+      <filename>img/logo.*</filename>
+      <name locale="en_US">Logo</name>
+      <name locale="ru_RU">Логотип</name>
+    </setting>
+		
+    <setting var="background_image" control_type="image_select">
+        <value>img/bg1.jpg</value>
+        <name locale="en_US">Background image</name>
+        <name locale="ru_RU">Фоновое изображение</name>
+        <options>
+            <option value="img/bg1.jpg" />
+            <option value="img/bg2.jpg" />
+            <option value="img/bg3.jpg" />
+            <option value="img/bg4.jpg" />
+            <option value="img/bg5.jpg" />
+        </options>
+    </setting>
+	
+    <setting var="heading" control_type="text">
+      <value>Скоро открытие нового сайта</value>
+      <name locale="en_US">Heading</name>
+      <name locale="ru_RU">Заголовок</name>
+    </setting>
+	
+    <setting var="main_text" control_type="text">
+      <value>В настоящее время мы работаем над чем-то потрясающим. Следите за обновлениями! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mauris ex, fermentum ac mi vitae, malesuada gravida velit. Vestibulum et erat id purus cursus bibendum.</value>
+      <name locale="en_US">Main text</name>
+      <name locale="ru_RU">Основной текст</name>
+    </setting>
+	
+    <setting var="timer" control_type="text">
+      <value>11/20/2023 00:00:00</value>
+      <name locale="en_US">Timer in format: Month/Day/Year Time. For example 11/20/2023 00:00:00</name>
+      <name locale="ru_RU">Таймер в формате: Месяц/День/Год Время. Например 11/20/2023 00:00:00</name>
+    </setting>
+	
+	<setting var="modal_setting" control_type="group_divider">
+		<value></value>
+		<name locale="en_US">Modal</name>
+		<name locale="ru_RU">Модальное окно</name>
+	</setting>
+	
+    <setting var="about_us_text_heading" control_type="text">
+      <value>История нашей компании</value>
+      <name locale="en_US">Heading of about us text</name>
+      <name locale="ru_RU">Заголовок текста о нас</name>
+    </setting>
+	
+    <setting var="about_us_text" control_type="text">
+      <value>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution.</value>
+      <name locale="en_US">Text about us</name>
+      <name locale="ru_RU">Текст о нас</name>
+    </setting>
+	
+    <setting var="modal_phone" control_type="text">
+      <value>+7 (495) 123-45-67</value>
+      <name locale="en_US">Phone number</name>
+      <name locale="ru_RU">Телефон</name>
+    </setting>
+	
+    <setting var="modal_email" control_type="text">
+      <value>info@example.com</value>
+      <name locale="en_US">E-mail</name>
+      <name locale="ru_RU">E-mail</name>
+    </setting>
+	
+    <setting var="modal_address" control_type="text">
+      <value>Австрия, Вена, Тройштрассе 5</value>
+      <name locale="en_US">Address</name>
+      <name locale="ru_RU">Адрес</name>
+    </setting>
+	
+	<setting var="soc_links" control_type="group_divider">
+		<value></value>
+		<name locale="en_US">Social networks links</name>
+		<name locale="ru_RU">Ссылки на социальные сети</name>
+	</setting>
+	
+    <setting var="soc_link_vk" control_type="text">
+      <value>https://vk.com/</value>
+      <name locale="en_US">Vkontakte</name>
+      <name locale="ru_RU">Вконтакте</name>
+    </setting>
+	
+    <setting var="soc_link_fb" control_type="text">
+      <value>https://facebook.com/</value>
+      <name locale="en_US">Facebook</name>
+      <name locale="ru_RU">Facebook</name>
+    </setting>
+	
+    <setting var="soc_link_inst" control_type="text">
+      <value>https://instagram.com/</value>
+      <name locale="en_US">Instagram</name>
+      <name locale="ru_RU">Instagram</name>
+    </setting>
+	
+    <setting var="soc_link_tw" control_type="text">
+      <value>https://twitter.com/</value>
+      <name locale="en_US">Twitter</name>
+      <name locale="ru_RU">Twitter</name>
+    </setting>
+
+  </settings>
+	<locales>
+		<locale>
+			<msgid>About us</msgid>
+			<msgstr locale="ru_RU">О нас</msgstr>
+		</locale>
+		<locale>
+			<msgid>Phone</msgid>
+			<msgstr locale="ru_RU">Телефон</msgstr>
+		</locale>
+		<locale>
+			<msgid>E-mail</msgid>
+			<msgstr locale="ru_RU">Электронная почта</msgstr>
+		</locale>
+		<locale>
+			<msgid>Address</msgid>
+			<msgstr locale="ru_RU">Адрес</msgstr>
+		</locale>
+		<locale>
+			<msgid>Days</msgid>
+			<msgstr locale="ru_RU">Дней</msgstr>
+		</locale>
+		<locale>
+			<msgid>Hours</msgid>
+			<msgstr locale="ru_RU">Часов</msgstr>
+		</locale>
+		<locale>
+			<msgid>Minutes</msgid>
+			<msgstr locale="ru_RU">Минут</msgstr>
+		</locale>
+		<locale>
+			<msgid>Seconds</msgid>
+			<msgstr locale="ru_RU">Секунд</msgstr>
+		</locale>
+	</locales>
+</theme>

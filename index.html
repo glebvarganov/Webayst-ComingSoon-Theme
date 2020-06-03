@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>{$wa->title()|escape}</title>
+    <meta name="Keywords" content="{$wa->meta('keywords')|escape}" />
+    <meta name="Description" content="{$wa->meta('description')|escape}" />
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	{if !empty($canonical)}<link rel="canonical" href="{$canonical}"/>{/if}
+	<link rel="shortcut icon" href="/favicon.ico" />
+
+	<link href="{$wa_theme_url}style.css?v{$wa_theme_version}" rel="stylesheet">
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+
+</head>
+<body style="background: url({$wa_theme_url}{$theme_settings.background_image}) no-repeat center center fixed;">
+<span id="countDownDate" data-value="{$theme_settings.timer}" data-exp="EXPIRED"></span>
+<div class="wrapper">
+
+	{include file="`$wa_active_theme_path`/page.html" inline}
+	<div class="overlay"></div>
+
+</div>
+
+<script src="{$wa_theme_url}scripts.js?v{$wa_theme_version}"></script>
+</body>
+</html>
